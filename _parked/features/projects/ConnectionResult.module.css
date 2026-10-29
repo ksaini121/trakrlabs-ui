@@ -1,0 +1,26 @@
+.ok,
+.error {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+}
+
+.ok {
+  align-items: center;
+  background: var(--color-accent-2-100);
+  color: var(--color-accent-2-800);
+}
+
+.error {
+  align-items: flex-start;
+  background: var(--color-accent-100);
+  color: var(--color-accent-800);
+}
+
+.errorText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

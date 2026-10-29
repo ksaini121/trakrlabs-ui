@@ -1,0 +1,17 @@
+.sm {
+  font-size: 13px;
+}
+
+.lg {
+  font-size: 15px;
+  padding: 12px 24px;
+}
+
+/* Secondary button sitting on a surface: lifted onto the lighter neutral. */
+.soft {
+  background: var(--color-neutral-100);
+}
+
+.soft:hover {
+  background: var(--color-neutral-200);
+}

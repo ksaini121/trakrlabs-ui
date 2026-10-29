@@ -1,0 +1,6 @@
+.loader {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  color: var(--color-accent);
+}

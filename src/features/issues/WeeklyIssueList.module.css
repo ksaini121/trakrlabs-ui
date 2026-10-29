@@ -1,0 +1,128 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: opacity 0.2s;
+}
+
+.card {
+  border-radius: 28px;
+  background: var(--color-neutral-100);
+  border: 1px solid var(--color-divider);
+  box-shadow: var(--shadow-sm);
+}
+
+.toolbar {
+  position: relative;
+  z-index: 46;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 10px 12px 10px 20px;
+  border-radius: 28px 28px 0 0;
+  background: var(--color-surface);
+}
+
+.openCount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.openIcon {
+  color: var(--color-accent-2-600);
+}
+
+.attnCount {
+  font-size: 14px;
+  color: var(--color-accent-800);
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-divider);
+  background: var(--color-neutral-200);
+  font-size: 14px;
+}
+
+.attention {
+  background: var(--color-accent-100);
+  color: var(--color-accent-900);
+}
+
+.attentionIcon {
+  color: var(--color-accent-700);
+}
+
+.groupTitle {
+  font-weight: 700;
+}
+
+.groupSub {
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.attention .groupSub,
+.attention .groupCount {
+  color: var(--color-accent-800);
+}
+
+.groupCount {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-neutral-700);
+}
+
+.goalEmpty {
+  padding: 18px 20px 18px 52px;
+  border-top: 1px solid var(--color-divider);
+  font-size: 14px;
+  color: var(--color-neutral-700);
+}
+
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.noResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 20px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.skeletonRow {
+  display: flex;
+  gap: 14px;
+  padding: 18px 20px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.skeletonText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bottomPad {
+  height: 14px;
+}
+
+@media (max-width: 760px) {
+  .groupSub {
+    display: none;
+  }
+}

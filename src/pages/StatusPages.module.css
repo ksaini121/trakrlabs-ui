@@ -1,0 +1,38 @@
+/* Shared by the one-card screens: accept invite, first sync, no access, not found. */
+
+.title {
+  font-size: 30px;
+}
+
+.heading {
+  font-size: 38px;
+  margin-bottom: 6px;
+}
+
+.body {
+  color: var(--color-neutral-800);
+}
+
+.start {
+  align-self: flex-start;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-neutral-700);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

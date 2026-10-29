@@ -1,0 +1,49 @@
+.card,
+.skeleton {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 150px;
+  padding: 22px;
+  border-radius: 32px;
+  background: var(--color-surface);
+}
+
+.card {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.card:hover {
+  color: var(--color-text);
+  background: var(--color-neutral-300);
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.repo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.synced {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--color-neutral-700);
+}

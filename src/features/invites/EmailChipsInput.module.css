@@ -1,0 +1,77 @@
+.root {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--color-neutral-700);
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 6px 8px;
+  border-radius: 24px;
+  background: var(--color-neutral-100);
+  border: 1px solid var(--color-divider);
+}
+
+.box:focus-within {
+  border-color: var(--color-accent);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 6px 5px 12px;
+  border-radius: 999px;
+  background: var(--color-neutral-300);
+  font-size: 13px;
+}
+
+.remove {
+  all: unset;
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: var(--color-neutral-300);
+}
+
+.remove:focus-visible {
+  outline: 2px solid var(--color-accent);
+}
+
+.input {
+  flex: 1;
+  min-width: 220px;
+  padding: 6px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  font-size: 13px;
+  color: var(--color-accent-800);
+}

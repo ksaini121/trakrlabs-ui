@@ -1,0 +1,68 @@
+.bubble {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.xs {
+  width: 22px;
+  height: 22px;
+  font-size: 11px;
+}
+
+.sm {
+  width: 28px;
+  height: 28px;
+  font-size: 13px;
+}
+
+.md {
+  width: 34px;
+  height: 34px;
+  font-size: 13px;
+}
+
+.lg {
+  width: 52px;
+  height: 52px;
+}
+
+.xl {
+  width: 96px;
+  height: 96px;
+}
+
+/* Filled, for the goal number and success ticks. */
+.sage,
+.number {
+  background: var(--color-accent-2-500);
+  color: var(--color-neutral-100);
+}
+
+.danger {
+  background: var(--color-accent-700);
+  color: var(--color-neutral-100);
+}
+
+.muted {
+  background: var(--color-neutral-700);
+  color: var(--color-neutral-100);
+}
+
+.neutral {
+  background: var(--color-neutral-300);
+  color: var(--color-neutral-900);
+}
+
+.accentSoft {
+  background: var(--color-accent-200);
+  color: var(--color-accent-800);
+}
+
+.sageSoft {
+  background: var(--color-accent-2-200);
+  color: var(--color-accent-2-800);
+}

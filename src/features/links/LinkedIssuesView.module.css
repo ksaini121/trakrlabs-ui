@@ -1,0 +1,170 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  transition: opacity 0.2s;
+}
+
+.dimmed {
+  opacity: 0.5;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionTitle {
+  margin: 0 0 4px;
+  font-size: 22px;
+}
+
+.sectionSub {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-neutral-700);
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--color-neutral-100);
+  border: 1px solid var(--color-divider);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding: 14px 20px;
+  background: var(--color-surface);
+}
+
+.reason {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--color-neutral-800);
+}
+
+.spark {
+  margin-top: 2px;
+  color: var(--color-accent-2-600);
+}
+
+.people {
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.owner {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-divider);
+}
+
+.row:hover {
+  background: var(--color-bg);
+}
+
+.openIcon {
+  color: var(--color-accent-2-600);
+}
+
+.issueLink {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.issueLink:hover {
+  color: var(--color-accent-700);
+  text-decoration: underline;
+}
+
+.number {
+  font-weight: 400;
+  color: var(--color-neutral-700);
+}
+
+.who {
+  font-size: 13px;
+  color: var(--color-neutral-800);
+}
+
+.size {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--color-neutral-300);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 32px;
+  background: var(--color-surface);
+}
+
+.emptyArt {
+  width: 80px;
+  height: 80px;
+}
+
+.emptyTitle {
+  margin: 0 0 6px;
+  font-size: 21px;
+}
+
+.emptyBody {
+  margin: 0;
+  color: var(--color-neutral-800);
+}
+
+.skeletonCard {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border-radius: 28px;
+  background: var(--color-surface);
+}
+
+@media (max-width: 640px) {
+  .who {
+    display: none;
+  }
+
+  .empty {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

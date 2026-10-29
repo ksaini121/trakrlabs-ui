@@ -1,0 +1,20 @@
+.lg {
+  min-height: 44px;
+}
+
+.raised {
+  background: var(--color-neutral-100);
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+.error {
+  color: var(--color-accent-800);
+}

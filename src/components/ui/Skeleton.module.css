@@ -1,0 +1,21 @@
+.skeleton {
+  display: block;
+  flex: none;
+  animation: trk-pulse 1.6s ease-in-out infinite;
+}
+
+.pill {
+  border-radius: 999px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.strong {
+  background: var(--color-neutral-300);
+}
+
+.soft {
+  background: var(--color-neutral-200);
+}

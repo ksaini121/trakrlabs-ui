@@ -1,0 +1,138 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(32px, 5vh, 72px) clamp(20px, 5vw, 96px);
+}
+
+/* Two columns that grow with the screen, capped so lines stay readable on very wide monitors. */
+.inner {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 112px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2.4vh, 32px);
+  max-width: 680px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(44px, 4.8vw, 92px);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.lead {
+  margin: 0;
+  max-width: 34em;
+  font-size: clamp(17px, 1.35vw, 22px);
+  line-height: 1.55;
+  color: var(--color-neutral-800);
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.cta {
+  font-size: clamp(16px, 1.15vw, 19px);
+  padding: clamp(14px, 1.1vw, 18px) clamp(26px, 2vw, 34px);
+  gap: 10px;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(13px, 0.9vw, 15px);
+  color: var(--color-neutral-700);
+}
+
+.steps {
+  margin: clamp(8px, 2vh, 24px) 0 0;
+  padding: clamp(18px, 1.6vw, 26px) 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 1.6vw, 28px);
+  border-top: 1px solid var(--color-divider);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepTitle {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-heading);
+  font-size: clamp(16px, 1.15vw, 20px);
+  line-height: 1.2;
+}
+
+.stepNum {
+  font-family: var(--font-body);
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--color-accent-2-700);
+}
+
+.stepBody {
+  margin-top: 4px;
+  font-size: clamp(13px, 0.95vw, 15px);
+  color: var(--color-neutral-700);
+}
+
+.visual {
+  min-width: 0;
+}
+
+/* Smaller laptops and tablets: stack, preview under the sign-in. */
+@media (max-width: 1200px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .content {
+    max-width: none;
+  }
+
+  .visual {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    align-items: flex-start;
+  }
+
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .step {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .visual {
+    display: none;
+  }
+}

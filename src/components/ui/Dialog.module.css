@@ -1,0 +1,58 @@
+.native {
+  margin: 90px auto auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: calc(100vw - 48px);
+  overflow: visible;
+}
+
+.native::backdrop {
+  background: color-mix(in srgb, var(--color-neutral-900) 45%, transparent);
+}
+
+.md {
+  width: 620px;
+}
+
+.lg {
+  width: 820px;
+}
+
+.panel {
+  width: 100%;
+  padding: 30px;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin-bottom: -8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  font-size: 26px;
+}
+
+.description {
+  margin-top: -8px;
+  font-size: 14px;
+  color: var(--color-neutral-800);
+}
+
+@media (max-width: 640px) {
+  .native {
+    margin-top: 24px;
+  }
+
+  .panel {
+    padding: 22px;
+  }
+}

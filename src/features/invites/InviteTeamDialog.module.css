@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sendRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* Aligns the button with the chip box, below the field label. */
+.send {
+  margin-top: 26px;
+  padding: 13px 22px;
+}
+
+/* The dialog is already on the surface color: lift the list onto the lighter neutral. */
+.team {
+  background: var(--color-neutral-100);
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+@media (max-width: 640px) {
+  .sendRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .send {
+    margin-top: 0;
+  }
+}
+
+/* Keep the neutral "Member" tag visible on the lighter list. */
+.team :global(.tag-neutral) {
+  background: var(--color-neutral-200);
+}

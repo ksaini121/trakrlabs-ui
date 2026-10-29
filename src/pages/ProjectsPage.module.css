@@ -1,0 +1,116 @@
+.page {
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 40px 64px;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.title {
+  flex: 1;
+  margin: 0;
+  font-size: 40px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Matches the design's h6 eyebrow. */
+.sectionTitle {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-neutral-700);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.empty {
+  max-width: 820px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 48px;
+  border-radius: 40px;
+  background: var(--color-surface);
+}
+
+.emptyArt {
+  flex: none;
+  width: 140px;
+  height: 140px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-accent-2-200);
+}
+
+.emptyArt span {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--color-accent-300);
+}
+
+.emptyText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.emptyText h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.emptyText p {
+  margin: 0;
+  color: var(--color-neutral-800);
+  text-wrap: pretty;
+}
+
+.emptyHint {
+  font-size: 13px;
+  color: var(--color-neutral-700);
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px 16px 48px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .empty {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+  }
+}

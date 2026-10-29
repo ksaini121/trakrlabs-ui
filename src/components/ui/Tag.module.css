@@ -1,0 +1,14 @@
+.tag {
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.bold {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.warning {
+  border-color: var(--color-accent-700);
+  color: var(--color-accent-800);
+}

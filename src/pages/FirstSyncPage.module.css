@@ -1,0 +1,23 @@
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.spinner {
+  color: var(--color-accent);
+}
+
+.count {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.number {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  line-height: 1;
+}
